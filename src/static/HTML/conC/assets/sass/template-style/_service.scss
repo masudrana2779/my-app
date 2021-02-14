@@ -1,0 +1,151 @@
+.services_wrap {
+    background: #fbfbfd;
+    .services_images_wrap {
+        padding-bottom: 15px;
+        .services_single_item {
+            padding: 10px;
+            background: #fff;
+            box-shadow: 0px 2px 6px 0px rgba(0, 11, 40, 0.1);
+            margin-bottom: 40px;
+            transition: all 0.3s;
+            
+            &:hover {
+                box-shadow: 0px 20px 30px 0px rgba(0, 11, 40, 0.1);
+            }
+            
+            .service_img {
+                width: 100%;
+                max-height: 280px;
+                background: #dadde6;
+                overflow: hidden;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            
+            .service_img_details {
+                background: #f9f9f9;
+                padding: 20px 30px;
+                .ser_img_title {
+                    color: #051441;
+                    font-size: 22px;
+                    line-height: 26px;
+                    font-family: $muli;
+                    font-weight: 800;
+                    margin-bottom: 10px;
+                }
+                .er_img_para {
+                    color: #646c84;
+                    font-family: $muli;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    margin-bottom: 25px;
+                }
+                .view_ser {
+                    display: inline-block;
+                    font-family: $muli;
+                    font-weight: 700;
+                    color: #646c84;
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-transform: uppercase;
+                    transition: all 0.3s;
+                    border-bottom: 1px solid transparent;
+                    &:hover {
+                        color: $brand-color;
+                        border-color: $brand-color;
+                    }
+                    i {
+                        float: right;
+                        margin-left: 5px;
+                        line-height: 16px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .services_details_content {
+        padding: 50px 0;
+        .ser_deatils_content {
+            margin-bottom: 50px;
+            .details_title {
+                
+            }
+            .details_para {
+                margin-bottom: 30px;
+            }
+            .download_brochure {
+                display: inline-block;
+                position: relative;
+                padding-left: 40px;
+                color: #646c84;
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: 600;
+                font-family: $muli;
+                text-transform: uppercase;
+                
+                &:hover {
+                    color: $brand-color;
+                }
+                i {
+                    font-size: 20px;
+                    width: 46px;
+                    height: 46px;
+                    background: $primary-color;
+                    box-shadow: 0px 2px 4px 0px rgba(0, 11, 40, 0.06);
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 44px;
+                    display: inline-block;
+                    margin-right: 20px;
+                    color: $brand-color;
+                }
+                &:before {
+                    position: absolute;
+                    content: "";
+                    height: 1px;
+                    width: 30px;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    background: $brand-color;
+                }
+            }
+        }
+        .more_details {
+            border: 1px dashed #d6d9e3;
+            padding: 40px 30px 70px;
+            
+            .more {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                
+                li {
+                    padding-left: 32px;
+                    position: relative;
+                    margin-bottom: 10px;
+                    
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    
+                    &:before {
+                        position: absolute;
+                        content: "\45";
+                        font-family: "eleganticons";
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 0;
+                        font-size: 20px;
+                        color: $brand-color;
+                    }
+                }
+            }
+        }
+    }
+}

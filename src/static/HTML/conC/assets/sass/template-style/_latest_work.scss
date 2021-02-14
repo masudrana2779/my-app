@@ -1,0 +1,159 @@
+.latest_work_wrap {
+    padding: 105px 0 115px;
+    .latest_work_title {
+        max-width: 780px;
+        width: 100%;
+        margin: 0 auto 60px;
+    }
+    .latest_work_slider {
+        .slick-dots {
+            li {
+                width: 8px;
+                height: 8px;
+                background: #cbcfdd;
+                border-radius: 50%;
+                margin: 0 5px;
+                button {
+                    display: none;
+                }
+                &.slick-active {
+                    width: 12px;
+                    height: 12px;
+                    background: $brand-color;
+                    margin-bottom: -2px;
+                }
+            }
+        }
+    }
+    .latest_work_item {
+        .work_single_item {
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 2px 6px 0px rgba(0, 11, 40, 0.1);
+            transition: all 0.3s;
+            padding: 10px;
+            margin-bottom: 47px;
+            &:hover {
+                box-shadow: 0px 20px 30px 0px rgba(0, 11, 40, 0.1);
+            }
+            .img_wrap {
+                position: relative;
+                img {
+                    width: 100%;
+                }
+                .hover_content {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    background: rgba(2,12,44,0.5);
+                    transition: all 0.3s;
+                    opacity: 0;
+                    .hover_inner {
+                        width: 100%;
+                        text-align: center;
+                        transition: all 0.3s;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-30%);
+                        
+                        a {
+                            display: inline-block;
+                            text-align: center;
+                            width: 54px;
+                            height: 54px;
+                            border: 1px solid #fff;
+                            border-radius: 50%;
+                            line-height: 52px;
+                            &:hover {
+                                border-color: $brand-color;
+                                background: $brand-color;
+                            }
+                            img {
+                                max-width: 22px;
+                                width: 100%;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                    .social_menu {
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+                        text-align: center;
+                        width: 100%;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        transition: all 0.3s;
+                        li {
+                            display: inline-block;
+                            
+                            & + li {
+                                margin-left: 5px;
+                            }
+                            
+                            a {
+                                color: #fff;
+                                font-size: 16px;
+                                display: block;
+                                width: 50px;
+                                height: 50px;
+                                border: 1px solid #fff;
+                                line-height: 48px;
+                                border-radius: 50%;
+                                &:hover {
+                                    border-color: $brand-color;
+                                    background: $brand-color;
+                                }
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    .hover_content {
+                        opacity: 1;
+                        .hover_inner {
+                            transform: translateY(-50%);
+                        }
+                        .social_menu {
+                            bottom: 40px;
+                        }
+                    }
+                }
+            }
+            .work_details {
+                padding: 27px 0 23px 30px;
+                .details_title {
+                    a {
+                        color: #051441;
+                        font-weight: 700;
+                        font-size: 22px;
+                        line-height: 30px;
+                        font-family: $muli;
+                        &:hover {
+                            color: $brand-color;
+                        }
+                    }
+                }
+                .name {
+                    color: #051441;
+                    font-size: 20px;
+                    font-weight: 700;
+                    font-family: $muli;
+                    line-height: 26px;
+                }
+                .w_title {
+                    color: #646c84;
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-family: $muli;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+}

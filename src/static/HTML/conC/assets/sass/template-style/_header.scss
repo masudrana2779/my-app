@@ -1,0 +1,109 @@
+/*=============         header  style               =====================*/
+
+.header {
+    padding: 15px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1080;
+    
+    &.fixedMenu {
+        position: fixed;
+        background: rgba(0,11,44,1);
+    }
+    
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 1200px;
+        }
+    }
+    
+    .navbar_header {
+        padding: 0; 
+        .logo {
+            img {
+                display: inline-block;
+            }
+        }
+        .navbar_btn {
+            padding: 0;
+            svg {
+                
+            }
+        }
+        .header_menu {
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                li {
+                    display: inline-block;
+                    margin-right: 45px;
+                    a {
+                       display: block;
+                        font-size: 16px;
+                        line-height: 28px;
+                        font-family: $muli;
+                        font-weight: 400;
+                        color: $primary-color;
+                        padding: 0;
+                        transition: all 0.3s;
+                        position: relative;
+                        &:before {
+                            position: absolute;
+                            content: "";
+                            bottom: 0;
+                            right: 0;
+                            background: $brand-color;
+                            width: 0;
+                            height: 1px;
+                            transition: all 0.3s;
+                        }
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    &.active,
+                    &:hover {
+                        a {
+                            color: $brand-color;
+                            &:before {
+                                right: auto;
+                                left: 0;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .contact_Us {
+                border-left: 2px solid rgba(255,255,255, 0.3);
+                margin-left: 30px;
+                padding: 5px 0;
+                .icon {
+                    float: left;
+                    img {
+                        margin: 6px 18px 0;
+                    }
+                }
+                .contact {
+                    float: left;
+                    .con_text {
+                        font-size: 14px;
+                        font-family: $muli;
+                        line-height: 20px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                    }
+                    .con_link {
+                        font-size: 20px;
+                        font-family: $muli;
+                        line-height: 20px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}

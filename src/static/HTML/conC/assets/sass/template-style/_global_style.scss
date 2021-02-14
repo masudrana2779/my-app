@@ -1,0 +1,121 @@
+
+
+h1,h2.h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+body {
+    background: $primary-color;
+} 
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+
+.btn_group {
+    
+}
+
+.btn_glob {
+    background: $brand-color;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 16px 30px;
+    color: $primary-color !important;
+    display: inline-block;
+    transition:  all 0.3s;
+    font-family: $muli;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+   
+}
+
+.btn_know_more {
+    letter-spacing: 2px; 
+    &:hover {
+        background: $primary-color;
+        color: $brand-color !important;
+    }
+}
+
+.title {
+    color: #051441;
+    font-size: 36px;
+    font-family: $muli;
+    line-height: 50px;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+.pr_70 {
+    padding-right: 70px;
+}
+
+.mtm_120 {
+    margin-top: -120px;
+}
+
+.d_flex {
+    display: flex;
+}
+
+.align_center {
+    align-items: center;
+}
+
+.pr_100 {
+    padding-right: 100px;
+}
+
+.pb_100 {
+    padding-bottom: 100px !important;
+}
+
+.pt_70 {
+    padding-top: 70px;
+}
+
+.pt_90 {
+    padding-top: 90px;
+}
+
+.pd_120 {
+    padding: 120px 0;
+}
+
+.pb_85 {
+    padding-bottom: 85px;
+}
+
+.header .navbar_header .navbar_btn {
+    color: #fff;
+    box-shadow: none;
+    outline: none;
+}
+
+.mb_show {
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 992px) {
+    .cus_pad_left {
+        padding-left: 0;
+    }
+    .cus_pad_right {
+        padding-right: 0;
+    }
+    .cus_pad_0 {
+        padding: 0;
+    }
+}
